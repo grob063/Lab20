@@ -1,0 +1,11 @@
+﻿@model Lab20EFCore.GenesCoffee.User
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h1>Welcome @Context.Session.GetString("userName")</h1>
+
+<div>
+    <a asp-controller="Products" asp-action="Index">List of Coffee Products and Prices!</a>
+</div>
